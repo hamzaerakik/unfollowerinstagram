@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 280px;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .button-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        button {
+            padding: 12px 24px;
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            width: 120px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #stopBtn {
+            background: #34495e;
+        }
+        .status {
+            font-size: 14px;
+            color: #fff;
+            padding: 12px;
+            background: #2a2a2a;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .timer {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+            text-align: center;
+            background: #2a2a2a;
+            padding: 8px;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #2a2a2a;
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+        }
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-row">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+        </div>
+        <div class="status" id="status">Ready to start</div>
+        <div class="timer" id="timer">Waiting...</div>
+        <div class="footer">
+            © 2025 Hamzon Tech | 
+            <a href="https://www.youtube.com/@HamzonTech" target="_blank">YouTube</a> | 
+            <a href="https://www.instagram.com/hamzon_tech/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Unfollower",
+  "version": "1.0",
+  "description": "Automatically unfollow Instagram users",
+  "permissions": [
+      "activeTab",
+      "scripting"
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+  }
+}
